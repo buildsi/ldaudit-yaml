@@ -3,21 +3,17 @@ digraph D {
 node [fontname="Arial"];
 
 root [shape=circle]
-ld_linux_x86_64_so_2 [shape=circle]
-libc_so_6 [shape=circle]
-libnss_compat_so_2 [shape=circle]
-libnss_nis_so_2 [shape=circle]
-libnsl_so_1 [shape=circle]
-libnss_files_so_2 [shape=circle]
-root -> libc_so_6
+ld_linux_x86_64_so_2 [shape=box]
+libc_so_6 [shape=box,style=filled,color="#23F774"]
+libnss_compat_so_2 [shape=box,style=filled,color="#4E3E82"]
+libnss_nis_so_2 [shape=box,style=filled,color="#4E3E82"]
+libnsl_so_1 [shape=box,style=filled,color="#1F25EE"]
+libnss_files_so_2 [shape=box,style=filled,color="#1F25EE"]
+
 root -> libc_so_6
 libc_so_6 -> libnss_compat_so_2
-libc_so_6 -> libnss_compat_so_2
-libc_so_6 -> libnss_nis_so_2
 libc_so_6 -> libnss_nis_so_2
 libnss_nis_so_2 -> libnsl_so_1
-libnss_nis_so_2 -> libnsl_so_1
-libnss_nis_so_2 -> libnss_files_so_2
 libnss_nis_so_2 -> libnss_files_so_2
 
 }
