@@ -203,6 +203,12 @@ root
 $ cat test.yaml 
 ```
 
+You can also use the [prebuilt container](https://github.com/buildsi/ldaudit-yaml/pkgs/container/ldaudit-yaml) instead:
+
+```bash
+$ docker run -it ghcr.io/buildsi/ldaudit-yaml:latest ls
+```
+
 ### License
 
 This project is part of Spack. Spack is distributed under the terms of both the MIT license and the Apache License (Version 2.0). Users may choose either license, at their option.
