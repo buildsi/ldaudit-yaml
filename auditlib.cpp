@@ -172,7 +172,7 @@ char * la_objsearch(const char *name, uintptr_t *cookie, unsigned int flag) {
   ss << cookie;
    
   std::string output = "  - event: searching_for\n    function: la_objsearch\n    name: \"" + std::string(name) + "\"\n";
-  output += "    initiated_by: " + ss.str() + "\n    flag: \"" + flagName + "\"\n";
+  output += "    initiated_by: " + ss.str() + "\n    flag: \"" + flagName + "\"\n    description: \"" + desc + "\"\n";
   doPrint(output);
 
   return (char*)name;
