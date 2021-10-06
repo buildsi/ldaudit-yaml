@@ -10,6 +10,7 @@ for a container, so I wanted to test this out. After [build](#build) There are a
  - [Terminal Output](#terminal-output): prints YAML to the terminal for easy inspection
  - [File Output](#file-output): the same YAML, but to an output file defined by an environment variable.
  - [Container](#docker): Build or run a container that provides the same functionality.
+ - [Generate Graph](#generate-graph): A simple example of generating a graph from the YAML
 
 ## Build
 
@@ -208,6 +209,18 @@ You can also use the [prebuilt container](https://github.com/buildsi/ldaudit-yam
 ```bash
 $ docker run -it ghcr.io/buildsi/ldaudit-yaml:latest ls
 ```
+
+## Generate Graph
+
+The script [generate_dot.py](generate_dot.py) is a very rudimentary example of generating a diagram from the loads.
+
+```
+$ make dot
+```
+
+Will generate the following:
+
+![audit.png](audit.png)
 
 ### License
 

@@ -3,3 +3,7 @@ all:
 	
 run:
 	LD_AUDIT=./auditlib.so whoami
+
+dot:
+	python generate_dot.py ldaudit.yaml > audit.dot
+	dot -Tpng audit.dot -o audit.png

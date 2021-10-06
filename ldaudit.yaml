@@ -7,132 +7,132 @@ auditlib:
   - event: object_loaded
     name: ""
     function: la_objopen
-    identifier: 0x7fd321828610
+    identifier: 0x7f7970118610
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: object_loaded
     name: "/lib64/ld-linux-x86-64.so.2"
     function: la_objopen
-    identifier: 0x7fd321827e68
+    identifier: 0x7f7970117e68
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: LA_ACT_ADD
     description: New objects are being added to the link map.
   - event: searching_for
     function: la_objsearch
     name: "libc.so.6"
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libc.so.6"
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libc.so.6"
     function: la_objopen
-    identifier: 0x7fd32128f5b0
+    identifier: 0x7f796fb7f5b0
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: LA_ACT_CONSISTENT
     description: Link-map activity has been completed (map is consistent)
   - event: searching_for
     function: la_objsearch
     name: "libnss_compat.so.2"
-    initiated_by: 0x7fd32128f5b0
+    initiated_by: 0x7f796fb7f5b0
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnss_compat.so.2"
-    initiated_by: 0x7fd32128f5b0
+    initiated_by: 0x7f796fb7f5b0
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: LA_ACT_ADD
     description: New objects are being added to the link map.
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnss_compat.so.2"
     function: la_objopen
-    identifier: 0x55838cf5a0e0
+    identifier: 0x557fc88e80e0
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: LA_ACT_CONSISTENT
     description: Link-map activity has been completed (map is consistent)
   - event: searching_for
     function: la_objsearch
     name: "libnss_nis.so.2"
-    initiated_by: 0x7fd32128f5b0
+    initiated_by: 0x7f796fb7f5b0
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnss_nis.so.2"
-    initiated_by: 0x7fd32128f5b0
+    initiated_by: 0x7f796fb7f5b0
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: LA_ACT_ADD
     description: New objects are being added to the link map.
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnss_nis.so.2"
     function: la_objopen
-    identifier: 0x55838cf5b6c0
+    identifier: 0x557fc88e96c0
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: searching_for
     function: la_objsearch
     name: "libnsl.so.1"
-    initiated_by: 0x55838cf5b6c0
+    initiated_by: 0x557fc88e96c0
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnsl.so.1"
-    initiated_by: 0x55838cf5b6c0
+    initiated_by: 0x557fc88e96c0
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnsl.so.1"
     function: la_objopen
-    identifier: 0x55838cf5bb90
+    identifier: 0x557fc88e9b90
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: searching_for
     function: la_objsearch
     name: "libnss_files.so.2"
-    initiated_by: 0x55838cf5b6c0
+    initiated_by: 0x557fc88e96c0
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnss_files.so.2"
-    initiated_by: 0x55838cf5b6c0
+    initiated_by: 0x557fc88e96c0
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnss_files.so.2"
     function: la_objopen
-    identifier: 0x55838cf5c060
+    identifier: 0x557fc88ea060
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7fd321828610
+    initiated_by: 0x7f7970118610
     flag: LA_ACT_CONSISTENT
     description: Link-map activity has been completed (map is consistent)
