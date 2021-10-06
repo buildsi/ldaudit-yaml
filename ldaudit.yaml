@@ -1,0 +1,128 @@
+auditlib:
+  la_version: 1
+  audits:
+  - event: handshake
+    function: la_version
+    value: 1
+  - event: object_loaded
+    name: ""
+    function: la_objopen
+    identifier: 0x7fd4a3c9a610
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: object_loaded
+    name: "/lib64/ld-linux-x86-64.so.2"
+    function: la_objopen
+    identifier: 0x7fd4a3c99e68
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: activity_occurring
+    function: la_activity
+    initiated_by: 0x7fd4a3c9a610
+    flag: LA_ACT_ADD
+    description: New objects are being added to the link map.
+  - event: searching_for
+    function: la_objsearch
+    name: "libc.so.6"
+    initiated_by: 0x7fd4a3c9a610
+    flag: "LA_SER_ORIG"
+  - event: searching_for
+    function: la_objsearch
+    name: "/lib/x86_64-linux-gnu/libc.so.6"
+    initiated_by: 0x7fd4a3c9a610
+    flag: "LA_SER_CONFIG"
+  - event: object_loaded
+    name: "/lib/x86_64-linux-gnu/libc.so.6"
+    function: la_objopen
+    identifier: 0x7fd4a37015b0
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: activity_occurring
+    function: la_activity
+    initiated_by: 0x7fd4a3c9a610
+    flag: LA_ACT_CONSISTENT
+    description: Link-map activity has been completed (map is consistent)
+  - event: searching_for
+    function: la_objsearch
+    name: "libnss_compat.so.2"
+    initiated_by: 0x7fd4a37015b0
+    flag: "LA_SER_ORIG"
+  - event: searching_for
+    function: la_objsearch
+    name: "/lib/x86_64-linux-gnu/libnss_compat.so.2"
+    initiated_by: 0x7fd4a37015b0
+    flag: "LA_SER_CONFIG"
+  - event: activity_occurring
+    function: la_activity
+    initiated_by: 0x7fd4a3c9a610
+    flag: LA_ACT_ADD
+    description: New objects are being added to the link map.
+  - event: object_loaded
+    name: "/lib/x86_64-linux-gnu/libnss_compat.so.2"
+    function: la_objopen
+    identifier: 0x55bcfcf710e0
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: activity_occurring
+    function: la_activity
+    initiated_by: 0x7fd4a3c9a610
+    flag: LA_ACT_CONSISTENT
+    description: Link-map activity has been completed (map is consistent)
+  - event: searching_for
+    function: la_objsearch
+    name: "libnss_nis.so.2"
+    initiated_by: 0x7fd4a37015b0
+    flag: "LA_SER_ORIG"
+  - event: searching_for
+    function: la_objsearch
+    name: "/lib/x86_64-linux-gnu/libnss_nis.so.2"
+    initiated_by: 0x7fd4a37015b0
+    flag: "LA_SER_CONFIG"
+  - event: activity_occurring
+    function: la_activity
+    initiated_by: 0x7fd4a3c9a610
+    flag: LA_ACT_ADD
+    description: New objects are being added to the link map.
+  - event: object_loaded
+    name: "/lib/x86_64-linux-gnu/libnss_nis.so.2"
+    function: la_objopen
+    identifier: 0x55bcfcf726c0
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: searching_for
+    function: la_objsearch
+    name: "libnsl.so.1"
+    initiated_by: 0x55bcfcf726c0
+    flag: "LA_SER_ORIG"
+  - event: searching_for
+    function: la_objsearch
+    name: "/lib/x86_64-linux-gnu/libnsl.so.1"
+    initiated_by: 0x55bcfcf726c0
+    flag: "LA_SER_CONFIG"
+  - event: object_loaded
+    name: "/lib/x86_64-linux-gnu/libnsl.so.1"
+    function: la_objopen
+    identifier: 0x55bcfcf72b90
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: searching_for
+    function: la_objsearch
+    name: "libnss_files.so.2"
+    initiated_by: 0x55bcfcf726c0
+    flag: "LA_SER_ORIG"
+  - event: searching_for
+    function: la_objsearch
+    name: "/lib/x86_64-linux-gnu/libnss_files.so.2"
+    initiated_by: 0x55bcfcf726c0
+    flag: "LA_SER_CONFIG"
+  - event: object_loaded
+    name: "/lib/x86_64-linux-gnu/libnss_files.so.2"
+    function: la_objopen
+    identifier: 0x55bcfcf73060
+    flag: LM_ID_BASE
+    description: Link map is part of the initial namespace
+  - event: activity_occurring
+    function: la_activity
+    initiated_by: 0x7fd4a3c9a610
+    flag: LA_ACT_CONSISTENT
+    description: Link-map activity has been completed (map is consistent)

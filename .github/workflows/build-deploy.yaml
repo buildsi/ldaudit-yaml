@@ -1,0 +1,31 @@
+name: Build and Deploy container
+
+on:
+  # Always test on pull request
+  pull_request: []
+
+  # Deploy on merge to main
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-test-containers:
+    runs-on: ubuntu-latest
+    name: Build LDAudit Container
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2        
+
+      - name: Build Container
+        run: |
+            docker build -t ghcr.io/buildsi/ldaudit-yaml .
+            docker images | grep ldaudit
+
+      - name: Login and Deploy Test Container
+        if: (github.event_name != 'pull_request')
+        run: |
+            docker images
+            echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+            docker push ghcr.io/buildsi/ldaudit-yaml:latest
+
