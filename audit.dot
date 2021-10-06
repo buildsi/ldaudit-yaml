@@ -4,11 +4,11 @@ node [fontname="Arial"];
 
 root [shape=circle]
 ld_linux_x86_64_so_2 [shape=box]
-libc_so_6 [shape=box,style=filled,color="#23F774"]
-libnss_compat_so_2 [shape=box,style=filled,color="#4E3E82"]
-libnss_nis_so_2 [shape=box,style=filled,color="#4E3E82"]
-libnsl_so_1 [shape=box,style=filled,color="#1F25EE"]
-libnss_files_so_2 [shape=box,style=filled,color="#1F25EE"]
+libc_so_6 [shape=box,style=filled,color="#3FC57F"]
+libnss_compat_so_2 [shape=box,style=filled,color="#F444E0"]
+libnss_nis_so_2 [shape=box,style=filled,color="#F444E0"]
+libnsl_so_1 [shape=box,style=filled,color="#CCE381"]
+libnss_files_so_2 [shape=box,style=filled,color="#CCE381"]
 
 root -> libc_so_6
 libc_so_6 -> libnss_compat_so_2
