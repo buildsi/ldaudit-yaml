@@ -7,275 +7,275 @@ auditlib:
   - event: object_loaded
     name: ""
     function: la_objopen
-    identifier: 0x7f3a5b546610
+    identifier: 0x7f80ad129610
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: object_loaded
     name: "/lib64/ld-linux-x86-64.so.2"
     function: la_objopen
-    identifier: 0x7f3a5b545e68
+    identifier: 0x7f80ad128e68
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: LA_ACT_ADD
     description: New objects are being added to the link map.
   - event: searching_for
     function: la_objsearch
     name: "libc.so.6"
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libc.so.6"
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libc.so.6"
     function: la_objopen
-    identifier: 0x7f3a5afa9550
+    identifier: 0x7f80acb8c550
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: symbol_bind
     name: "_dl_find_dso_for_object"
-    function: la_symbind32
-    where_needed: 0x7f3a5afa9550
-    where_defined: 0x7f3a5b545e68
+    function: la_symbind64
+    where_needed: 0x7f80acb8c550
+    where_defined: 0x7f80ad128e68
     index_symbol: 15
     description: Unknown
   - event: symbol_bind
     name: "__tunable_get_val"
-    function: la_symbind32
-    where_needed: 0x7f3a5afa9550
-    where_defined: 0x7f3a5b545e68
+    function: la_symbind64
+    where_needed: 0x7f80acb8c550
+    where_defined: 0x7f80ad128e68
     index_symbol: 21
     description: Unknown
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: LA_ACT_CONSISTENT
     description: Link-map activity has been completed (map is consistent)
   - event: pre_init
     function: la_preinit
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
   - event: symbol_bind
     name: "strrchr"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 234
     description: Unknown
   - event: symbol_bind
     name: "setlocale"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 165
     description: Unknown
   - event: symbol_bind
     name: "bindtextdomain"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 2168
     description: Unknown
   - event: symbol_bind
     name: "textdomain"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1758
     description: Unknown
   - event: symbol_bind
     name: "__cxa_atexit"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 862
     description: Unknown
   - event: symbol_bind
     name: "getopt_long"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1525
     description: Unknown
   - event: symbol_bind
     name: "__errno_location"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 930
     description: Unknown
   - event: symbol_bind
     name: "geteuid"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1723
     description: Unknown
   - event: symbol_bind
     name: "getpwuid"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 333
     description: Unknown
   - event: searching_for
     function: la_objsearch
     name: "libnss_compat.so.2"
-    initiated_by: 0x7f3a5afa9550
+    initiated_by: 0x7f80acb8c550
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnss_compat.so.2"
-    initiated_by: 0x7f3a5afa9550
+    initiated_by: 0x7f80acb8c550
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: LA_ACT_ADD
     description: New objects are being added to the link map.
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnss_compat.so.2"
     function: la_objopen
-    identifier: 0x55b04c5610e0
+    identifier: 0x5557abed50e0
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: LA_ACT_CONSISTENT
     description: Link-map activity has been completed (map is consistent)
   - event: searching_for
     function: la_objsearch
     name: "libnss_nis.so.2"
-    initiated_by: 0x7f3a5afa9550
+    initiated_by: 0x7f80acb8c550
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnss_nis.so.2"
-    initiated_by: 0x7f3a5afa9550
+    initiated_by: 0x7f80acb8c550
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: LA_ACT_ADD
     description: New objects are being added to the link map.
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnss_nis.so.2"
     function: la_objopen
-    identifier: 0x55b04c5626c0
+    identifier: 0x5557abed66c0
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: searching_for
     function: la_objsearch
     name: "libnsl.so.1"
-    initiated_by: 0x55b04c5626c0
+    initiated_by: 0x5557abed66c0
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnsl.so.1"
-    initiated_by: 0x55b04c5626c0
+    initiated_by: 0x5557abed66c0
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnsl.so.1"
     function: la_objopen
-    identifier: 0x55b04c562b90
+    identifier: 0x5557abed6b90
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: searching_for
     function: la_objsearch
     name: "libnss_files.so.2"
-    initiated_by: 0x55b04c5626c0
+    initiated_by: 0x5557abed66c0
     flag: "LA_SER_ORIG"
     description: "This is the original name that is being searched for (ELF NEEDED or filename)"
   - event: searching_for
     function: la_objsearch
     name: "/lib/x86_64-linux-gnu/libnss_files.so.2"
-    initiated_by: 0x55b04c5626c0
+    initiated_by: 0x5557abed66c0
     flag: "LA_SER_CONFIG"
     description: "name was found via the ldconfig(8) cache (/etc/ld.so.cache)."
   - event: object_loaded
     name: "/lib/x86_64-linux-gnu/libnss_files.so.2"
     function: la_objopen
-    identifier: 0x55b04c563060
+    identifier: 0x5557abed7060
     flag: LM_ID_BASE
     description: Link map is part of the initial namespace
   - event: activity_occurring
     function: la_activity
-    initiated_by: 0x7f3a5b546610
+    initiated_by: 0x7f80ad129610
     flag: LA_ACT_CONSISTENT
     description: Link-map activity has been completed (map is consistent)
   - event: symbol_bind
     name: "puts"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 429
     description: Unknown
   - event: symbol_bind
     name: "__fpending"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1773
     description: Unknown
   - event: symbol_bind
     name: "fileno"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1622
     description: Unknown
   - event: symbol_bind
     name: "__freading"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1413
     description: Unknown
   - event: symbol_bind
     name: "fflush"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 93
     description: Unknown
   - event: symbol_bind
     name: "fclose"
-    function: la_symbind32
-    where_needed: 0x7f3a5b546610
-    where_defined: 0x7f3a5afa9550
+    function: la_symbind64
+    where_needed: 0x7f80ad129610
+    where_defined: 0x7f80acb8c550
     index_symbol: 1206
     description: Unknown
   - event: object_closed
     function: la_objclose
-    identifier: 0x7f3a5b546610
+    identifier: 0x7f80ad129610
   - event: object_closed
     function: la_objclose
-    identifier: 0x55b04c5610e0
+    identifier: 0x5557abed50e0
   - event: object_closed
     function: la_objclose
-    identifier: 0x55b04c5626c0
+    identifier: 0x5557abed66c0
   - event: object_closed
     function: la_objclose
-    identifier: 0x55b04c562b90
+    identifier: 0x5557abed6b90
   - event: object_closed
     function: la_objclose
-    identifier: 0x55b04c563060
+    identifier: 0x5557abed7060
   - event: object_closed
     function: la_objclose
-    identifier: 0x7f3a5afa9550
+    identifier: 0x7f80acb8c550
   - event: object_closed
     function: la_objclose
-    identifier: 0x7f3a5b545e68
+    identifier: 0x7f80ad128e68
