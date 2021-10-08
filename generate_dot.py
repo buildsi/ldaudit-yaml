@@ -53,7 +53,19 @@ def main(yamlfile):
 
     # For each event, see if the searched for library is then found
     for e, event in enumerate(events):
-        if event["event"] == "searching_for":
+ 
+        if event['event'] == "symbol_bind":
+            node1 = nodes.get(event["where_defined"])
+            node2 = nodes.get(event["where_needed"])
+            name1 = node1["slug"]
+            name2 = node2["slug"]
+            if "%s->%s" % (name2, name1) in seen:
+                continue
+            parents[event['where_defined']] = event["where_needed"]
+            relations += "%s -> %s\n" % (name2, name1)
+            seen.add("%s->%s" % (name2, name1))
+
+        elif event["event"] == "searching_for":
 
             # The next event is usually the find?
             next_event = None
@@ -91,7 +103,7 @@ def main(yamlfile):
         if node["slug"] == "root":
             shape = "circle"
 
-        # Figure out the parent for the color
+        # Figure out the parent for the color       
         parent = parents.get(node["identifier"])
         color = ""
         if parent:
